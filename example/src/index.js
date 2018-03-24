@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react'
 import { Text, View, ScrollView, Dimensions, Animated } from 'react-native'
-import Tutorial from 'react-native-tutorial'
 
-console.warn(Tutorial)
+// Why cant import from 'react-native-tutorial ? 🤔
+// import Tutorial from 'react-native-tutorial'
+import Tutorial from '../node_modules/react-native-tutorial/src/index.js'
 
 const Container = ({ children, animated, inputRange }) => {
   const backgroundColor = animated.interpolate({
