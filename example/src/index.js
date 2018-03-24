@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react'
 import { Text, View, ScrollView, Dimensions, Animated } from 'react-native'
-import Tutorial from './Tutorial'
+import Tutorial from 'react-native-tutorial'
+
+console.warn(Tutorial)
 
 const Container = ({ children, animated, inputRange }) => {
   const backgroundColor = animated.interpolate({
